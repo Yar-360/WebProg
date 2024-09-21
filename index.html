@@ -1,42 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Демонстрація CSS стилів та ефектів меню</title>
-    <link rel="stylesheet" href="styles.css"> </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #3b5998;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        .highlight {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-    <nav>
-        <ul>
-            <li style="background-color: gold;">Головна</li> 
-            <li>Форум</li>
-            <li>Блоги</li>
-            <li>Файли</li>
-            <li>Довідка</li>
-        </ul>
-    </nav>
 
-   
+    <div class="navbar">
+        <a href="#">Главная</a>
+        <a href="#">Новости</a>
+        <a href="#">Контакты</a>
+        <a href="#">О компании</a>
+        <a href="#">Как добраться</a>
+    </div>
 
-    <style>
-        /* Внутрішній стиль */
-        nav ul li:hover {
-            background-color: purple;
-        }
-    </style>
-    
-    <nav1>
-        <li1>Шаблон сайту</li1>
-        <li1>Integer odio risus</li1>
+    <div class="container">
+        <h1>Vestibulum ante ipsum</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at.
-            Vivamus rhoncus vel neque non eleifend. Donec adipiscing
+            Vestibulum ante ipsum primis in <span class="highlight">faucibus orci luctus</span> et ultrices posuere cubilia Curae;
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu fermentum diam,
+            vitae faucibus ligula. Nam nec risus sed nisi porttitor ullamcorper iaculis ac nulla. Sed condimentum nisi in tincidunt
+            adipiscing. Mauris vehicula mollis consequat. Vivamus non accumsan tortor. Aliquam dictum justo at augue viverra,
+            vel interdum lorem pharetra.
         </p>
-    </nav1> 
-    <style>
-        nav1 li:hover {
-            background-color: purple;
-        }
-    </style>
-     
+        <p>
+            Nullam id faucibus ante. <span class="highlight">Proin tristique lorem</span> tristique dolor porttitor, eget
+            adipiscing leo gravida. Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero. In placerat odio ac
+            dapibus faucibus. Praesent ut est in ligula facilisis congue eget ac ante. Phasellus at felis vitae est molestie
+            ultricies.
+        </p>
+    </div>
 
-    </body>
+</body>
 </html>
